@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+::selection {
+    background-color: #2DCD9D;
+    color: #fff;
+}
+
+body {
+	background: #F2F2F2;
+}
+
+section {
+    margin: 0 13rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 950px;
+}
+
+section .formulario {
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 750px;
+    border-radius: 50px;
+    box-shadow: 0.1px 0.1px 2.2px rgba(0, 0, 0, 0.034),
+                0.1px 0.1px 5.3px rgba(0, 0, 0, 0.048),
+                0.3px 0.3px 10px rgba(0, 0, 0, 0.06),
+                0.4px 0.4px 17.9px rgba(0, 0, 0, 0.072),
+                0.8px 0.8px 33.4px rgba(0, 0, 0, 0.086),
+                2px 2px 80px rgba(0, 0, 0, 0.12);
+}
+
+section form {
+    align-items: center;
+    display: flex;
+}
+
+form input {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.formulario .imagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 16rem;
+    height: 30rem;
+    margin-right: 5rem;
+}
+
+.formulario .imagens h3 {
+    margin-bottom: 3rem;
+    font-weight: 600;
+}
+
+.formulario .imagens label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    border: solid;
+    border-color: #21A17B;
+    border-radius: 50%;
+    color: #21A17B;
+    font-size: 20px;
+    height: 35px;
+    width: 40px;
+}
+
+.formulario .imagens label:hover {
+    color: #fff;
+    background-color: #21A17B;
+    cursor: pointer;
+}
+
+.formulario .forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.forms .alinharForms {
+    display: flex;
+    gap: 50px;
+}
+
+.forms-um {
+    width: 350px;
+}
+
+.forms-dois {
+    width: 350px;
+    align-items: center;
+}
+
+/* From uiverse.io by @alexruix */
+.input, .inputReadonly{
+    margin-top: 2rem;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-bottom-color: #21A17B;
+    padding: .2rem 0;
+    outline: none;
+    background-color: transparent;
+    color: #0d0c22;
+    transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.inputReadonly {
+    cursor: default;
+}
+   
+.input:focus, .input:hover {
+    outline: none;
+    padding: .2rem 1rem;
+    border-radius: 1rem;
+    border-color: #21A17B;
+}
+   
+.input::placeholder {
+    color: #21A17B;
+}
+   
+.input:focus::placeholder {
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.inputTextarea {
+    background: transparent;
+    padding: 5px;
+    width: 350px;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1rem;
+    border-color: #21A17B;
+    line-height: 25px;
+    transition: all 0.3s ease;
+    margin-top: 2rem;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    width: 220px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1rem;
+    border-color: #21A17B;
+    cursor: pointer;
+    line-height: 30px;
+    transition: all 0.3s ease;
+}
+
+.botaoCEP {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    border: solid;
+    border-width: 2px;
+    border-radius: 1rem;
+    border-color: #21A17B;
+    line-height: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.2rem;
+}
+
+.botao:hover, .botaoCEP:hover {
+    color: #fff;
+    background-color: #21A17B;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.idVendedor {
+    display: none;
+}

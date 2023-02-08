@@ -1,0 +1,174 @@
+html {
+    margin: unset;
+    padding: unset;
+    height: 100vh;
+}
+body {
+    background-color: #F2F2F2;
+    display: flex;
+    margin: unset;
+    padding: unset;
+    min-height: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+main {
+    margin: 7rem 0 15rem 0;
+    padding: 0 13rem;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #F2F2F2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: fit-content;
+    gap: 1rem;
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+::-moz-selection { 
+    background-color: #2DCD9D;
+    color: #fff;
+}
+
+::selection {
+    background-color: #2DCD9D;
+    color: #fff;
+}
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' -25,
+  'opsz' 10
+}   
+section#carrousel {
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-grow: 1;
+    height: 35rem;
+}
+section#carrousel .carousel {
+  width: 100%;
+
+}
+
+section#carrousel .carousel-cell {
+  height: 100%;
+
+  margin: 0rem .5rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#carrousel .carousel-cell img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section#carrousel .carousel-cell:nth-child(1) {
+    height: 100%;
+    width: 35rem;
+}
+section#carrousel .carousel-cell:nth-child(2) {
+    height: 100%;
+    width: 35rem;
+}
+section#carrousel .carousel-cell:nth-child(3) {
+    height: 100%;
+    width: 35rem;
+}
+
+section#carrousel .carousel-cell:nth-child(4) {
+    height: 100%;
+    width: 35rem;
+}
+
+section#carrousel .carousel-cell:nth-child(5) {
+    height: 100%;
+    width: 35rem;
+}
+
+section#produto {
+    width: 40rem;
+    background-color: rgb(255, 255, 255);
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+section#produto .produto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+section#produto .produto .title {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+section#produto .produto h1 {
+    width: fit-content;
+}
+section#produto .produto h2 {
+    color: #127369;
+    flex-grow: 1;
+    height: fit-content;
+    word-break: break-all;
+    overflow-wrap: break-word;
+}
+section#produto .produto p {
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+section#produto .loja {
+    height: 4rem;
+    width: 100%;
+    background-color: #E9E8E8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1rem;
+    box-sizing: border-box;
+    color: black;
+}
+section#produto .loja:hover {
+    color: #2DCD9D;
+}
+section#produto .loja span{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 2rem;
+
+    text-decoration: none;
+}
+section#produto .loja .perfil {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+}
+section#produto .loja .perfil span {
+    height: 100%;
+    width: auto;
+    font-size: 2rem;
+
+}
+section#produto .loja .perfil P {
+    margin: unset;
+    font-size: 1.2rem;
+    margin-left: .25rem;
+    margin-right: 1rem;
+    text-decoration: none;
+}

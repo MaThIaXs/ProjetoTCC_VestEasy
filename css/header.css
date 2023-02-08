@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+.cabecalho{
+    font-family: 'Inter', sans-serif;
+    background-color: #21A17B;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.6rem 13rem 0.6rem 13rem;
+}
+  
+.cabecalho-conta{
+    margin-left: 10px;
+}
+  
+.cabecalho-conta .fa-solid{
+    font-size: 20pt;
+}
+  
+.cabecalho-conta i{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background-color: #21A17B;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: space-around;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+  
+.cabecalho-conta i:hover{
+    color: #21A17B;
+    background-color: #fff;
+}
+  
+.navegacao{
+    display: flex;
+}
+
+.a{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    appearance: none;
+
+}
+
+.navBar {
+    margin-right: 2.8rem;
+    padding-top: 0.7rem;
+    display: flex;
+    gap: 3rem;
+    font-size: 18px;
+}
+
+.navBar li {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+.navBar li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.navBar li:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+::selection {
+    background-color: #2DCD9D;
+    color: #fff;
+}
+
+body{
+    background: #f2f2f2;
+    width: 100%;
+}
+
+section{
+    margin-top: 12%;
+    margin-bottom: 13%;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7.3rem;
+}
+
+.cards .card .card-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background: #21A17B;
+}
+
+.cards .card .card-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.card{
+    position: relative;
+    background: #fff;
+    border-radius: 15px;
+    height: 320px;
+    width: 250px;
+    box-shadow:
+        1.8px 2.1px 1.3px rgba(0, 0, 0, 0.043),
+        3.7px 4.3px 3.6px rgba(0, 0, 0, 0.053),
+        5.8px 6.6px 7.6px rgba(0, 0, 0, 0.056),
+        8.3px 9.6px 14.9px rgba(0, 0, 0, 0.059),
+        12.6px 14.4px 30.5px rgba(0, 0, 0, 0.065),
+        27px 31px 81px rgba(0, 0, 0, 0.08);
+}
+
+.card::before{
+    content: "";
+    position: absolute;
+    height: 35%;
+    width: 100%;
+    background: #21A17B;
+    border-radius: 15px 15px 0 0;
+}
+
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    z-index: 100;
+}
+
+.card .person-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.person-info .name{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.person-info .carrer{
+    margin-top: 5px;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.card .person-social{
+    margin-top: 25px;
+}
+
+.person-social i{
+    height: 40px;
+    width: 40px;
+    padding-top: 12px;
+    text-align: center;
+    margin: 0 15px 15px 0;
+    background-color: #127369;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.person-social i:hover{
+    background-color: #21A17B;
+    cursor: pointer;
+}
